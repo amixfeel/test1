@@ -1,0 +1,99 @@
+html, body {
+	height: 100%;
+}
+
+.content, .about {
+	box-sizing: border-box;
+}
+
+body {
+	background: url(../img/bg.png);
+	text-align: center;
+	font-size: 15px;
+	font-family:  Verdana, sans-serif;
+	line-height: 19px;
+}
+
+body:after {
+	display: inline-block;
+	width: 0;
+	height: 100%;
+	content: '';
+	vertical-align: middle;
+}
+
+	.content {
+		position: relative;
+		display: inline-block;
+		overflow: hidden;
+		padding: 25px;
+		width: 900px;
+		border: 3px solid #f39c12;
+		border-radius: 7px;
+		background: #e74c3c;
+		vertical-align: middle;
+		text-align: left;
+		-webkit-transform: rotate(-2deg);
+		-moz-transform: rotate(-2deg);
+		transform: rotate(-2deg);
+	}
+
+		.myPhoto {
+			position: relative;
+			z-index: 2;
+			float: left;
+			padding: 10px 10px 20px 10px;
+			background: #ecf0f1;
+			box-shadow: 0 0 15px #7f8c8d;
+			text-align: center;
+			-webkit-transform: rotate(3deg);
+			-moz-transform: rotate(3deg);
+			transform: rotate(3deg);
+		}
+
+			figcaption {
+				margin-top: 10px;
+				font-weight: bold;
+				font-size: 25px;
+				font-family: Verdana, sans;
+			}
+
+		.myPhoto img {
+			display: block;
+		}
+
+
+	.about {
+		position: relative;
+		z-index: 1;
+		margin-left: -10px;
+		padding: 15px 15px 15px 29%;
+		width: 100%;
+		background: #fffed0;
+		text-shadow: 0 0 1px #34495e;
+		-webkit-transform: rotate(1deg);
+		-moz-transform: rotate(1deg);
+		transform: rotate(1deg);
+	}
+
+	.infoList {
+		padding: 10px;
+		background: #1abc9c;
+		color: white;
+		list-style: inside decimal;
+	}
+
+		.infoList li {
+			padding-top: 10px;
+			text-shadow: 0 0 1px white;
+			font-size: 16px;
+			line-height: 20px;
+		}
+
+.additionalInfo {
+	margin-bottom: 0;
+	color: #ecf0f1;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 34px;
+}
